@@ -1,0 +1,23 @@
+jwt:
+  secret: secret-value
+
+login:
+  maxAttempts: 3
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/support-portal
+    username: admin
+    password: secret
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+     hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+ 
+logging:
+  level:
+    org.springframework.security: TRACE
+    io.locngo.support.portal: TRACE
